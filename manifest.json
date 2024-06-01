@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "The Wikipedia Game",
+    "version": "1.0",
+    "description": "The Wikipedia Game extension",
+    "permissions": [
+        "scripting"
+      ],
+      "host_permissions": [
+        "https://*.wikipedia.org/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": ["https://*.wikipedia.org/*"],
+          "js": ["scripts/content.js"]
+        }
+      ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
