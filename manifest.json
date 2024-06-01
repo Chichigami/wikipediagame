@@ -16,6 +16,7 @@
         }
       ],
     "action": {
+      "get_daily": "help.js",
       "default_popup": "popup.html"
     }
   }
