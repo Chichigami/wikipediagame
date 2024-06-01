@@ -1,14 +1,16 @@
-var url = 'https://raw.githubusercontent.com/Chichigami/wikipediagame/main/dailylink.txt';
+var url = 'https://raw.githubusercontent.com/Chichigami/wikipediagame/main/dailylink.json';
+var dailyStart, dailyEnd
 
 fetch(url)
   .then(response => {
     return response.text();
   })
-  .then(data => { 
-    console.log(data[start]);
+  .then(data => {
+    data = JSON.parse(data)
+    dailyStart = data.start
+    dailyEnd = data.end
   })
 
-
 document.getElementById('navigateButton').addEventListener('click', () => {
-    chrome.tabs.create({ url: 'https://en.wikipedia.org/wiki/Special:Random' });
+    chrome.tabs.create({ url: dailyStart });
 });
