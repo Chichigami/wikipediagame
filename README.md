@@ -1,17 +1,18 @@
 # The Wikipedia Game Extension
 
-Start at one topic and end at another
-- Grab url from server/git rep
-    - Update git rep automatically daily
+So this is The Wikipedia Game but in a Google Chrome Extension. Because this is an extension, this will be open sourced, so that you know I'm not mining bitcoins off your browser. 
 
-Global Leaderboard Calendar
-- Host website with a calendar front end
-- DB management for each day
-- Interactable
 
-Local leaderboard
-- idk what to put here...
+Global Leaderboard Calendar [Future improvement]
+- Deploy and host a website with an interactable top 100 calendar
+
+Local leaderboard [Dynamic implementation]
+- Local Database
+    - ID | Username | Date | Time spent | # of tries | Start link | End link
+- Daily randomization
+    - JSON string to send to global leaderboard server
 
 Cheat detection
 - No search bar [DONE]
+- No side bar
 - URL Stack tracing
